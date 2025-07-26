@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sữa Tắm Thảo Mộc - Tươi Mát Tự Nhiên</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Sữa Tắm Thảo Mộc</h1>
+      <p>Làn da mịn màng, hương thơm thiên nhiên</p>
+      <a href="#order" class="btn">Đặt hàng ngay</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <h2>Vì sao chọn chúng tôi?</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <h3>100% Thảo mộc</h3>
+          <p>Chiết xuất từ thiên nhiên, an toàn cho mọi loại da.</p>
+        </div>
+        <div class="feature">
+          <h3>Hương thơm dịu nhẹ</h3>
+          <p>Lưu hương suốt cả ngày dài.</p>
+        </div>
+        <div class="feature">
+          <h3>Da mềm mượt</h3>
+          <p>Không gây khô ráp sau khi tắm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="container">
+      <img src="assets/product.jpg" alt="Sữa tắm thảo mộc" />
+      <div class="product-info">
+        <h2>Sữa Tắm Thảo Mộc 500ml</h2>
+        <p>Giá chỉ <strong>129.000đ</strong></p>
+        <a href="#order" class="btn">Mua ngay</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="container">
+      <h2>Đặt hàng ngay</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Họ và tên" required />
+        <input type="tel" placeholder="Số điện thoại" required />
+        <input type="text" placeholder="Địa chỉ nhận hàng" required />
+        <button type="submit" class="btn">Gửi đơn hàng</button>
+      </form>
+      <p id="message" style="color: green; margin-top: 10px;"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sữa Tắm Thảo Mộc - Made with love</p>
+    </div>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById('message').textContent = "Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất.";
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
